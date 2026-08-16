@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -11,6 +11,7 @@
     />
   </head>
   <body>
+    
     <!-- Responsive Navbar -->
 
     <nav
@@ -19,6 +20,7 @@
       <h1 class="text-2xl">GREENDEN</h1>
       <!-- hero icons tailwind css -->
       <svg
+      id="menuicon"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 16 16"
         fill="currentColor"
@@ -37,14 +39,46 @@
           <a class="hover:underline hover:text-black" href="index.html">Home</a>
         </li>
         <li>
-          <a class="hover:underline hover:text-black" href="product.html">Products</a>
+          <a class="hover:underline hover:text-black" href="product.html"
+            >Products</a
+          >
         </li>
         <li>
-          <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+          <a class="hover:underline hover:text-black" href="contact.html"
+            >Contact</a
+          >
         </li>
       </ul>
     </nav>
 
+    <!-- Side Navbar -->
+
+    <section
+      id="sidenav"
+      class="bg-green-100 fixed z-20 top-0 right-0 transition-all duration-1000"
+      style="width: 50%; height: 100vh; right:-50%"
+    >
+    <div class="text-right p-5">
+      <p id="closenav" class="inline cursor-pointer">X</p>
+    </div>
+      <ul class="flex flex-col gap-10 items-center text-gray-600 ">
+        <li>
+          <a class="hover:underline hover:text-black" href="index.html">Home</a>
+        </li>
+        <li>
+          <a class="hover:underline hover:text-black" href="product.html"
+            >Products</a
+          >
+        </li>
+        <li>
+          <a class="hover:underline hover:text-black" href="contact.html"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    
     <!-- header section -->
 
     <section class="bg-green-100 p-4 md:p-10 flex justify-center">
@@ -52,7 +86,9 @@
         <p class="mb-4">
           We offer you a wide Range of Artificial and Natural Flowers
         </p>
-        <h2 class="font-bold text-3xl mb-5 md:text-">Plants for your Interior</h2>
+        <h2 class="font-bold text-3xl mb-5 md:text-">
+          Plants for your Interior
+        </h2>
 
         <div>
           <button class="bg-black text-white rounded p-2">Shop Now</button>
@@ -158,89 +194,137 @@
     </section>
 
     <!-- Best Seller -->
-     <section class="p-4 text-center">
+    <section class="p-4 text-center">
       <h1 class="text-3xl font-bold text-center">Best Seller</h1>
 
       <div class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5">
-        
         <div>
-          <img src="./images/bestseller_1.jpg" class="inline hover:shadow-2xl transform hover:-translate-y-2" alt="Rose Plant">
-        <h1 class="font-bold">Rose Plant</h1>
-        <p class="font-bold">$20</p>
+          <img
+            src="./images/bestseller_1.jpg"
+            class="inline hover:shadow-2xl transform hover:-translate-y-2"
+            alt="Rose Plant"
+          />
+          <h1 class="font-bold">Rose Plant</h1>
+          <p class="font-bold">$20</p>
         </div>
 
         <div>
-          <img src="./images/bestseller_2.jpg" class="inline hover:shadow-2xl transform hover:-translate-y-2" alt="Fairy Garden Plant">
-        <h1 class="font-bold">Fairy Garden Plant</h1>
-        <p class="font-bold">$20</p>
+          <img
+            src="./images/bestseller_2.jpg"
+            class="inline hover:shadow-2xl transform hover:-translate-y-2"
+            alt="Fairy Garden Plant"
+          />
+          <h1 class="font-bold">Fairy Garden Plant</h1>
+          <p class="font-bold">$20</p>
         </div>
 
         <div>
-          <img src="./images/bestseller_3.jpg" class="inline hover:shadow-2xl transform hover:-translate-y-2" alt="Cyclamen">
-        <h1 class="font-bold">Cyclamen</h1>
-        <p class="font-bold">$20</p>
+          <img
+            src="./images/bestseller_3.jpg"
+            class="inline hover:shadow-2xl transform hover:-translate-y-2"
+            alt="Cyclamen"
+          />
+          <h1 class="font-bold">Cyclamen</h1>
+          <p class="font-bold">$20</p>
         </div>
 
         <div>
-          <img src="./images/bestseller_4.jpg" class="inline hover:shadow-2xl transform hover:-translate-y-2" alt="White Tulip">
-        <h1 class="font-bold">White Tulip</h1>
-        <p class="font-bold">$20</p>
+          <img
+            src="./images/bestseller_4.jpg"
+            class="inline hover:shadow-2xl transform hover:-translate-y-2"
+            alt="White Tulip"
+          />
+          <h1 class="font-bold">White Tulip</h1>
+          <p class="font-bold">$20</p>
         </div>
 
         <div>
-          <img src="./images/bestseller_5.jpg" class="inline hover:shadow-2xl transform hover:-translate-y-2" alt="Daisy">
-        <h1 class="font-bold">Daisy</h1>
-        <p class="font-bold">$20</p>
+          <img
+            src="./images/bestseller_5.jpg"
+            class="inline hover:shadow-2xl transform hover:-translate-y-2"
+            alt="Daisy"
+          />
+          <h1 class="font-bold">Daisy</h1>
+          <p class="font-bold">$20</p>
         </div>
 
         <div>
-          <img src="./images/bestseller_6.jpg" class="inline hover:shadow-2xl transform hover:-translate-y-2" alt="Amaryllis">
-        <h1 class="font-bold">Amaryllis</h1>
-        <p class="font-bold">$20</p>
+          <img
+            src="./images/bestseller_6.jpg"
+            class="inline hover:shadow-2xl transform hover:-translate-y-2"
+            alt="Amaryllis"
+          />
+          <h1 class="font-bold">Amaryllis</h1>
+          <p class="font-bold">$20</p>
         </div>
-
       </div>
+    </section>
 
-     </section>
+    <!-- Customer Reviews -->
+    <section>
+      <h1 class="text-3xl font-bold text-center mt-5">Customer Reviews</h1>
+      <div class="flex flex-col gap-5 justify-center text-white m-5">
+        <div class="bg-green-900 p-5 container">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sequi
+            eveniet placeat neque molestiae dolorum molestias vitae ipsam
+            aperiam ratione ad labore nulla est ullam qui, in architecto totam
+            rerum.
+          </p>
+          <p class="font-bold text-yellow-300">Genny Mathew</p>
+        </div>
 
-     <!-- Customer Reviews -->
-      <section >
-        <h1 class="text-3xl font-bold text-center mt-5">Customer Reviews</h1>
-            <div class="flex flex-col  gap-5 justify-center text-white m-5">
+        <div class="bg-green-900 p-5 container">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sequi
+            eveniet placeat neque molestiae dolorum molestias vitae ipsam
+            aperiam ratione ad labore nulla est ullam qui, in architecto totam
+            rerum.
+          </p>
+          <p class="font-bold text-yellow-300">Jim</p>
+        </div>
 
-              <div class="bg-green-900 p-5 container">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sequi eveniet placeat neque molestiae dolorum molestias vitae ipsam aperiam ratione ad labore nulla est ullam qui, in architecto totam rerum.</p>
-                <p class="font-bold text-yellow-300">Genny Mathew</p>
-              </div>
+        <div class="bg-green-900 p-5 container">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sequi
+            eveniet placeat neque molestiae dolorum molestias vitae ipsam
+            aperiam ratione ad labore nulla est ullam qui, in architecto totam
+            rerum.
+          </p>
+          <p class="font-bold text-yellow-300">Parker</p>
+        </div>
+      </div>
+    </section>
 
-              <div class="bg-green-900 p-5 container">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sequi eveniet placeat neque molestiae dolorum molestias vitae ipsam aperiam ratione ad labore nulla est ullam qui, in architecto totam rerum.</p>
-                <p class="font-bold text-yellow-300">Jim </p>
-              </div>
+    <!-- NewsLetter -->
 
-              <div class="bg-green-900 p-5 container">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sequi eveniet placeat neque molestiae dolorum molestias vitae ipsam aperiam ratione ad labore nulla est ullam qui, in architecto totam rerum.</p>
-                <p class="font-bold text-yellow-300">Parker</p>
-              </div>
+    <section class="text-center">
+      <h1 class="text-3xl font-bold mt-5 text-center">Join News Letter</h1>
+      <p>
+        Signup for our email newspaper to get exclusive discounts, updated, and
+        more..
+      </p>
+      <input
+        type="text"
+        class="border border-black p-2 m-3"
+        style="width: 80%"
+      />
+      <br />
+      <button class="text-white underline rounded bg-black p-3 m-1">
+        Subscribe
+      </button>
+    </section>
 
-            </div>
-      </section>
+    <!-- Footer -->
+    <section class="bg-green-100 p-10 flex flex-col gap-5">
+      <p class="font-bold text-4xl">Greenden</p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores unde
+        fugiat praesentium dolore earum,
+      </p>
+      <p>@ 2025 Greenden.com</p>
+    </section>
 
-      <!-- NewsLetter -->
-
-      <section class="text-center">
-        <h1 class="text-3xl font-bold mt-5 text-center">Join News Letter</h1>
-        <p>Signup for our email newspaper to get exclusive discounts, updated, and more..</p>
-        <input type="text" class="border border-black p-2 m-3" style="width: 80%;">
-        <br>
-        <button class="text-white underline rounded bg-black p-3 m-1">Subscribe</button>
-      </section>
-
-      <!-- Footer -->
-       <section class="bg-green-100 p-10 flex flex-col gap-5">
-        <p class="font-bold text-4xl">Greenden</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores unde fugiat praesentium dolore earum,</p>
-        <p>@ 2025 Greenden.com </p>
-       </section>
+    <script src="index.js"></script>
   </body>
 </html>
